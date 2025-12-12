@@ -1,0 +1,167 @@
+/*==============RESET STYLES=====================*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+    color: inherit;
+}
+ul, ol, li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html, body {
+    height: 100%;
+    line-height: 1;
+}
+button, input {
+    cursor: pointer;
+    background-color: inherit;
+}
+/*==============RESET STYLES=====================*/
+
+/*==============HEADER STYLES=====================*/
+.main_header {
+    position: relative;
+    font-size: 60px;
+    color: #000;
+    text-align: center;
+    margin: 30px 0;
+}
+/*---------opp 1.1-------------*/
+.main_header::before {
+    position: absolute;
+    content: "";
+    left: 42%; top: -15px;
+    width: 300px;
+    height: 3px;
+    background-color: #a500ab;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.list_item {
+    position: relative;
+}
+/*---------opp 1.2/ 1.3-------------*/
+.list_item::after {
+    position: absolute;
+    content: '*';
+    top: 3px; right: -20px;
+    width: auto; height: auto;
+    color: #00ff3c;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+    
+}
+.div_el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+    width: 500px;
+    height: 100px;
+    
+    border-radius: 10px;
+}
+/*---------opp 2.1-------------*/
+.div_el:nth-child(odd) {
+    background-color: #00ff3c;
+}
+/*---------opp 2.3-------------*/
+.div_el:first-child {
+    color: #005a96;
+}
+/*---------opp 2.3-------------*/
+.div_el:last-child {
+    color: #ffc400;
+}
+/*---------opp 2.4-------------*/
+.div_el:not(:nth-child(2)) {
+    border: 1px solid #ff0000;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #727171;
+    background-color: #00ff3c;
+    transition: all 0.2s ease;
+}
+/*---------opp 2.2-------------*/
+.btn:hover {
+    font-size: 24px;
+    border: 1px solid #dfdfdf;
+    background-color: #004510;
+}
+
+/*----------Ekstra utfordring------------*/
+.extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.ext_text {
+    font-size: 30px;
+    position: relative;
+    background-color: #ffc400;
+    text-align: center;
+    border-radius: 5px;
+}
+.ext_text::before {
+    position: absolute;
+    content: "";
+    top: -10px; left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff0000;
+}
+.ext_text::after {
+    position: absolute;
+    content: "";
+    bottom: -15px; left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #014442;
+}
+.ext_text:focus {
+    border: 1px solid #005a96;
+    border-radius: 5px;
+    background-color: #747474a5;
+    color: #fff;
+}
+.ext_text:nth-last-of-type(1) {
+    background-color: #0056f5;
+}
