@@ -139,6 +139,7 @@ button, input {
     background-color: #ffc400;
     text-align: center;
     border-radius: 5px;
+    padding: 3px;
 }
 .ext_text::before {
     position: absolute;
