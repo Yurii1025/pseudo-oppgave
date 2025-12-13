@@ -181,6 +181,7 @@ button, input {
     align-items: center;
     gap: 30px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .ext_text {
     font-size: 30px;
@@ -215,4 +216,5 @@ button, input {
 }
 .ext_text:nth-last-of-type(1) {
     background-color: #0056f5;
+    margin-bottom: 50px;
 }
