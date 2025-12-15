@@ -49,7 +49,7 @@ button, input {
     align-items: center;
     margin: 50px auto 50px auto;
 }
-.lightbox:before {
+.lightbox:after {
     position: absolute;
     content: '';
     top: -2px;
@@ -66,8 +66,8 @@ button, input {
     animation: animate 20s linear infinite;
 }
 
-/*---------opp 1.1(but with after))-------------*/
-.lightbox::after {
+/*---------opp 1.1-------------*/
+.lightbox::before {
     position: absolute;
     content: "";
     left: 25%; top: -15px;
